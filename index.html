@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <meta charset= "UTF-8">
+    <title>Criar Exemplo Trabalhado</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+  <div class="page">
+  <div class="form">
+    <h1>Formulário de Criação do Exemplo Trabalhado</h1>
+    <form>
+      <h3>Dados do Projeto</h3>
+      <!--<label>Nome:</label>-->
+      <input type="text" placeholder="Nome*" id="nome" name="nome" required>
+      <!--<label>Descrição:</label>-->
+      <input type="text" placeholder="Descrição*" id="descricao" name="descricao" required>
+      <!--<label>Link do projeto:</label>-->
+      <input type="text" placeholder="Link do Projeto*" id="link" name="link" required>
+
+      <h3>Conhecimento Prévio</h3>
+      <textarea name="conhecimento" value="" placeholder="Informe pré-requistos necessários para o entendimento do exemplo, caso exista." rows="3" cols="30"></textarea>
+
+      <h3>Dados do Exemplo</h3>
+      <input type="text" placeholder="Título*" id="titulo" name="titulo" required>
+      <input type="text" placeholder="Tópico*" id="topico" name="topico" required>
+      <textarea name="problema" value="" placeholder="Descrição do problema*" rows="3" cols="30"></textarea>
+      <textarea name="solucao" value="" placeholder="Etapas de Solução*" rows="3" cols="30"></textarea>
+      <textarea name="resultado" value="" placeholder="Resultado*" rows="3" cols="30"></textarea>
+      <p>* Preenchimento Obrigatório.</p>
+
+      <a href="#"><input type="submit" value="Criar" id="cadastro" onclick="cadastrar()"></a>
+
+      <a href="#"><input type="button"value="Cancelar" id="cancelar"></a>
+
+      
+    </form>
+  </div>
+</div>
+</html>

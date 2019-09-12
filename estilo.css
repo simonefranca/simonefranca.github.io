@@ -1,0 +1,122 @@
+.page {
+  width: 70%;
+  padding: 3% 0 0;
+  margin: auto;
+}
+.form h1{
+  text-align: center;
+  margin-bottom: 5%;
+}
+.form {
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 100%;
+  padding: 45px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: Times;
+  background: #ecf0f1;
+  width: 100%;
+  border: 0;
+  margin: 0 0 20px;
+  padding: 16px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form textarea {
+  font-family: Times;
+  background:#ecf0f1;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 16px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+#cancelar {
+  font-family: Times;
+  text-transform: uppercase;
+  outline: 0;
+  background: #34495e;
+  width: 30%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5%;
+}
+#cadastro{
+  font-family: Times;
+  text-transform: uppercase;
+  outline: 0;
+  background: #34495e;
+  width: 30%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 5%;
+  margin-left: 20%;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background: #16a085; 
+  font-family: Times;  
+}
+
+/************************************************/
+#central{
+  width: 100%;
+  margin-bottom: 5%;
+  height: 50px;
+}
+#menu { /*estilização da div com o menu*/
+  position: relative;
+  float: left;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+  background: #34495e;
+}
+#menu, #menu ul { /*retira as bolinhas do item pai */
+  list-style: none;
+}
+#menu > li {
+  float: left; /* itens pai um do lado do outro*/
+  position: relative;
+  border-right: 1px solid rgba(0,0,0,.1); /*borda entre os itens pai*/
+  }
+#menu a { /*estilização dos links-itens pai sem seleção*/
+  display: block;
+  position: relative;
+  padding: 10px;
+  text-decoration: none;
+  color: rgba(204,204,204,1);
+  line-height: 1;
+  font-size: 22px;
+  background: transparent;    
+}
+#menu > li:hover > a { /* estilização do item pai quando selecionado*/
+ 
+  color: #16a085;
+}
+
+
+figure {
+    width:200px;
+    height:100px;
+}
+figure img {
+    width:100%;     
+}
+figcaption p, i {
+    text-align:center;  
+}
