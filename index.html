@@ -3,35 +3,222 @@
     <meta charset= "UTF-8">
     <title>Criar Exemplo Trabalhado</title>
     <link rel="stylesheet" href="estilo.css">
-    <script type="text/javascript" src="index.js"></script>
+   <!-- <script type="text/javascript" src="index.js"></script>-->
+  <script type="text/javascript">
+        cadastro.onclick = cadastrar
+        function cadastrar(){
+          if (document.getElementById("titulo").value.length == '') {
+            alert('Por favor, preencha o campo Título!');
+            document.getElementById("titulo").focus();
+            return false;
+          }else{
+                if (document.getElementById("nome").value.length == '') {
+                  alert('Por favor, preencha o campo Nome!');
+                  document.getElementById("nome").focus();
+                  return false;
+                }else{
+                    if (document.getElementById("descricao").value.length == '') {
+                      alert('Por favor, preencha o campo Descrição do Projeto!');
+                      document.getElementById("descricao").focus();
+                      return false;
+                    }else{
+                        if (document.getElementById("link").value.length == '') {
+                          alert('Por favor, preencha o campo Link do Projeto!');
+                          document.getElementById("link").focus();
+                          return false;
+                        }else{
+                            if (document.getElementById("link2").value.length == '') {
+                              alert('Por favor, preencha o campo Link do Exemplo!');
+                              document.getElementById("link2").focus();
+                              return false;
+                            }else{
+                                if (document.getElementById("status").value.length == '') {
+                                  alert('Por favor, marque o campo Status do Projeto!');
+                                  document.getElementById("status").focus();
+                                  return false;
+                                }else{
+                                      if (document.getElementById("data").value.length == '') {
+                                        alert('Por favor, preencha o campo Data de Extração do Exemplo!');
+                                        document.getElementById("data").focus();
+                                        return false;
+                                      }else{
+                                            if (document.getElementById("contexto").value.length == '') {
+                                              alert('Por favor, preeencha o campo Contexto!');
+                                              document.getElementById("contexto").focus();
+                                              return false;
+                                            }else{
+                                                if (document.getElementById("problema").value.length == '') {
+                                                  alert('Por favor, prencha o campo Descrição do Problema!');
+                                                  document.getElementById("problema").focus();
+                                                  return false;
+                                                }else{
+                                                    if (document.getElementById("solucao").value.length == '') {
+                                                      alert('Por favor, preencha o campo Etapas de Solução!');
+                                                      document.getElementById("solucao").focus();
+                                                      return false;
+                                                    }else{
+                                                        if (document.getElementById("resultado").value.length == '') {
+                                                          alert('Por favor, preencha o campo Resultado!');
+                                                          document.getElementById("resultado").focus();
+                                                          return false;
+                                                        }else{
+                                                            var titulo = document.getElementById("titulo").value;
+                                                            var conhecimento = document.getElementById("conhecimento").value;
+                                                            var sugestoes = document.getElementById("sugestoes").value;
+                                                            var restricoes = document.getElementById("restricoes").value;
+
+                                                            var nome = document.getElementById("nome").value;
+                                                            var descricao = document.getElementById("descricao").value;
+                                                            var link = document.getElementById("link").value;
+                                                            var link2 = document.getElementById("link2").value;
+                                                            var status = document.getElementById("status").value;
+                                                            var data = document.getElementById("data").value;
+
+                                                            var contexto = document.getElementById("contexto").value;
+                                                            var problema = document.getElementById("problema").value;
+                                                            var imagem = document.getElementById("imagem").value;
+                                                            var solucao = document.getElementById("solucao").value;
+                                                            var resultado = document.getElementById("resultado").value;
+                                                            var imagem2 = document.getElementById("imagem2").value;
+                                                            var referencias = document.getElementById("referencias").value;
+
+
+                                                            var win = window.open('', '', '');
+
+                                                            win.document.write('<h2>Exemplo Trabalhado</h2>');
+                                                            win.document.write('<h3>Dados Gerais</h3>');
+                                                            win.document.write('<b>Título:</b> ');
+                                                            win.document.write(titulo);
+                                                            win.document.write('<br>');
+                                                            win.document.write('<b>Conhecimento Prévio:</b> ');
+                                                            win.document.write(conhecimento); 
+                                                            win.document.write('<br>');
+                                                            win.document.write('<b>Sugestões de Uso:</b> ');
+                                                            win.document.write(sugestoes);
+                                                            win.document.write('<br>');
+                                                            win.document.write('<b>Restrições de Uso:</b> ');
+                                                            win.document.write(restricoes);
+                                                            win.document.write('<br>');
+                                                            win.document.write('<h3>Dados do Projeto </h3>');
+                                                            win.document.write('<b>Nome:</b> ');
+                                                            win.document.write(nome);
+                                                            win.document.write('<br>');
+                                                            win.document.write('<b>Descrição do Projeto:</b> ');
+                                                            win.document.write(descricao);
+                                                            win.document.write('<br>');
+                                                            win.document.write('<b>Link do Projeto:</b> ');
+                                                            win.document.write(link);
+                                                            win.document.write('<br>');
+                                                            win.document.write('<b>Link do Exemplo:</b> ');
+                                                            win.document.write(link2);
+                                                            win.document.write('<br>');
+                                                            win.document.write('<b>Status do Projeto:</b> ');
+                                                            win.document.write(status);
+                                                            win.document.write('<br>');
+                                                            win.document.write('<b>Data da Extração do Exemplo:</b> ');
+                                                            win.document.write(data);
+                                                            win.document.write('<br>');
+                                                            win.document.write('<h3>Dados do Exemplo </h3>');
+                                                            win.document.write('<b>Contexto: </b>');
+                                                            win.document.write(contexto);
+                                                            win.document.write('<br>');
+                                                            win.document.write('<b>Descrição do Problema:</b> ');
+                                                            win.document.write(problema);
+                                                            win.document.write('<br>');
+                                                            win.document.write('<b>Imagem do Problema:</b> ');
+                                                            win.document.write(imagem);
+                                                            win.document.write('<br>');
+                                                            win.document.write('<b>Etapas de Solução:</b> ');
+                                                            win.document.write(solucao);
+                                                            win.document.write('<br>');
+                                                            win.document.write('<b>Resultado:</b> ');
+                                                            win.document.write(resultado);
+                                                            win.document.write('<br>');
+                                                            win.document.write('<b>Imagem do Resultado:</b> ');
+                                                            win.document.write(imagem2);
+                                                            win.document.write('<br>');
+                                                            win.document.write('<b>Referências:</b> ');
+                                                            win.document.write(referencias);
+
+                                                            win.document.close(); 
+                                                            win.print(); 
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                      }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+          
+        }
+    </script>
 </head>
   <div class="page">
   <div class="form">
     <h1>Formulário de Criação do Exemplo Trabalhado</h1>
-    <form>
-      <h3>Dados do Projeto</h3>
-      <!--<label>Nome:</label>-->
-      <input type="text" placeholder="Nome - Nome do projeto de software livre do qual o exemplo foi extraído*" id="nome" name="nome" required>
-      <!--<label>Descrição:</label>-->
-      <input type="text" placeholder="Descrição - Breve descrição do escopo do projeto*" id="descricao" name="descricao" required>
-      <!--<label>Link do projeto:</label>-->
-      <input type="text" placeholder="Link do Projeto - Link para o exemplo no repositório do projeto*" id="link" name="link" required>
+    <form id="formulario">
 
-      <h3>Conhecimento Prévio</h3>
-      <textarea name="conhecimento" value="" placeholder="Informe pré-requistos necessários para o entendimento do exemplo, caso exista." rows="3" cols="30"></textarea>
+      <div id="geral">
+      <h2>Dados Gerais</h2>
+      <label>Título:</label>
+      <input type="text" placeholder="Título do Exemplo*" id="titulo" name="titulo" required>
+      <label>Conhecimento Prévio<label>
+      <textarea name="conhecimento" id="conhecimento" value="" placeholder="Informe pré-requisitos necessários para o entendimento do exemplo, caso exista." rows="3" cols="30"></textarea>
+      <label>Sugestões de Uso</label>
+      <textarea name="sugestoes" id="sugestoes" value="" placeholder="Situações e tópicos da Engenharia de Software nos quais o exemplo pode ser utilizado" rows="3" cols="30"></textarea>
+      <label>Restrições de Uso</label>
+      <textarea name="restricoes" id="restricoes" value="" placeholder="Possíveis restrições para utilização do exemplo, caso exista." rows="3" cols="30"></textarea>
+     </div>
 
-      <h3>Dados do Exemplo</h3>
-      <input type="text" placeholder="Título - Nome do exemplo*" id="titulo" name="titulo" required>
-      <input type="text" placeholder="Tópico - Áreas e subáreas que o exemplo está contido*" id="topico" name="topico" required>
-      <textarea name="problema" value="" placeholder="Descrição do problema - Detalhamento do problema descrito no exemplo*" rows="3" cols="30"></textarea>
-      <textarea name="solucao" value="" placeholder="Etapas de Solução - Passos para resoluçcão do problema*" rows="3" cols="30"></textarea>
-      <textarea name="resultado" value="" placeholder="Resultado - Solução gerada a partir das etapas de solução*" rows="3" cols="30"></textarea>
+     <div id="projeto">
+      <h2>Dados do Projeto</h2>
+      <label>Nome:</label>
+      <input type="text" placeholder="Nome do projeto de software livre do qual o exemplo foi extraído*" id="nome" name="nome" required>
+      <label>Descrição do Projeto</label>
+      <textarea name="descricao" id="descricao" value="" placeholder="Breve descrição do escopo do projeto*" rows="3" cols="30" required></textarea>
+      <label>Link do Projeto:</label>
+      <input type="text" placeholder="Link para o repositório do projeto*" id="link" name="link" required>
+      <label>Link do Exemplo:</label>
+      <input type="text" placeholder="Link para o local de onde o exemplo foi retirado do projeto*" id="link2" name="link2" required>
+      <fieldset>
+          <legend>Status do Projeto</legend>
+          <input id="status" type="radio" name="status" value="Ativo" required>
+          <label>Ativo</label><br>
+          <input id="status" type="radio" name="status" value="Não Ativo" required>
+          <label>Não Ativo</label>
+      </fieldset><br>
+      <label>Data de Extração do Exemplo:</label>
+      <input type="date" placeholder="Data em que os dados do exemplo foram retirados do projeto*" id="data" name="data" required>
+      </div>
+
+      <div id="exemplo">
+      <h2>Dados do Exemplo</h2>
+      <label>Contexto:</label>
+      <textarea name="contexto" id="contexto" value="" placeholder="Explicar o contexto no qual o exemplo está plicado no projeto*" rows="3" cols="30" required></textarea>
+      <label>Descrição do Problema:</label>
+      <textarea name="problema" id="problema" value="" placeholder="Detalhamento do problema abordado no exemplo*" rows="3" cols="30" required></textarea>
+      <label>Imagem para exemplificar o problema, caso exista:</label>
+      <input type="file" name="imagem" id="imagem">
+      <label>Etapas de Solução:</label>
+      <textarea name="solucao" id="solucao" value="" placeholder="Passos para a resolução do problema*" rows="3" cols="30" required></textarea>
+      <label>Resultado:</label>
+      <textarea name="resultado" id="resultado" value="" placeholder="Solução gerada a partir das etapas de solução*" rows="3" cols="30" required></textarea>
+      <label>Imagem para exemplificar o resultado, caso exista:</label>
+      <input type="file" name="imagem2" id="imagem2">
+      <label>Referências:</label>
+      <textarea name="referencias" id="referencias" value="" placeholder="Apresentar referências citadas no exemplo, caso exitam" rows="3" cols="30"></textarea>
+      </div>
+
       <p>* Preenchimento Obrigatório.</p>
 
       <a href="#"><input type="submit" value="Criar" id="cadastro" onclick="cadastrar()"></a>
 
       <a href="#"><input type="button"value="Cancelar" id="cancelar"></a>
-
       
     </form>
   </div>
